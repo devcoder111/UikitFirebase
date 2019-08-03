@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    UIKIT TEST
+  </title>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  <!-- replace gstatic here -->
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <script src="jquery/index.js"></script>
+
+ 
+
+</head>
+<body  class="uk-flex uk-flex-center uk-background-muted uk-height-viewport">
+  <div class="uk-container uk-container-small uk-text-center">
+    <div class="row">
+      <h1 class="uk-text-bold uk-text-center">Manage Work</h1>
+    </div>
+    <div class="row">
+      <form id="form">
+        <fieldset class="uk-fieldset">
+          <div uk-grid="true" class="uk-grid">
+            <div class=" uk-width-1-3 uk-first-column">
+              <input type="text" class="uk-input uk-border-pill" required="" placeholder="Username" id="todo" name="todo">
+            </div>
+            <div class="uk-width-1-3 ">
+                <select class="uk-select uk-border-pill" id="status" name="status">
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+            </div>
+            <div class="uk-width-1-3">
+              <button type="submit" name="Add" id="add" value="add" class="uk-border-pill uk-button uk-button-primary uk-width-1-1">Submit</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="row">
+
+      <table class="uk-table uk-table-striped" >
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Todos</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+     <!--    <ul class="uk-list uk-list-striped">
+          
+        </ul> -->
+
+    </div>
+  </div>
+</body>
+</html>
